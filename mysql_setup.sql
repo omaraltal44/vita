@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS vitapro_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER IF NOT EXISTS 'vitapro_user'@'localhost' IDENTIFIED BY 'CHANGE_PASSWORD';
+GRANT ALL PRIVILEGES ON vitapro_db.* TO 'vitapro_user'@'localhost';
+FLUSH PRIVILEGES;
